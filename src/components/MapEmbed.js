@@ -3,6 +3,7 @@ export default function MapEmbed() {
     <div className="map-embed map-embed--full">
      <iframe
     src="https://www.google.com/maps?q=MDDTI+Beliaghata+Eastern+Railway+Sealdah&output=embed"
+    title="MDDTI Beliaghata Eastern Railway Sealdah"
     width="100%"
     height="450"
     allowfullscreen=""
