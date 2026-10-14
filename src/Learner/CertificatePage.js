@@ -12,8 +12,10 @@ export default function CertificatePage() {
 
   const printCertificate = () => {
     const originalTitle = document.title;
-    const quizName = (assessment?.title || "Course quiz")
-      .replace(/[<>:"/\\|?*\u0000-\u001f]/g, " ")
+    const quizName = [...(assessment?.title || "Course quiz")]
+      .filter((character) => character.charCodeAt(0) >= 32)
+      .join("")
+      .replace(/[<>:"/\\|?*]/g, " ")
       .replace(/\s+/g, " ")
       .trim();
     document.title = `${quizName || "Course quiz"}_certificate`;
