@@ -1,0 +1,2 @@
+# MDDTIELEARNINGPLATFORM
+Frontend Only
